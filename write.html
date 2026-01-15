@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevLog - Write Post</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>DevLog</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="write.html">Write Post</a>
+    </nav>
+  </header>
+
+  <section class="write-post">
+    <h2>Create New Post</h2>
+    <form id="postForm">
+      <label>Title:</label>
+      <input type="text" id="title" required>
+
+      <label>Content:</label>
+      <textarea id="content" required></textarea>
+
+      <label>Category:</label>
+      <select id="category" required>
+        <option value="Tech">Tech</option>
+        <option value="Life">Life</option>
+        <option value="Food">Food</option>
+        <option value="Travel">Travel</option>
+      </select>
+
+      <button type="submit">Add Post</button>
+    </form>
+  </section>
+
+  <script>
+    const postForm = document.getElementById("postForm");
+
+    postForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const title = document.getElementById("title").value;
+      const content = document.getElementById("content").value;
+      const category = document.getElementById("category").value;
+
+      // Get posts from localStorage
+      let posts = JSON.parse(localStorage.getItem("posts")) || [];
+      const newPost = {
+        id: Date.now(),
+        title,
+        content,
+        category
+      };
+
+      posts.unshift(newPost); // Add new post at top
+      localStorage.setItem("posts", JSON.stringify(posts));
+
+      alert("Post created successfully!");
+      postForm.reset();
+    });
+  </script>
+</body>
+</html>
