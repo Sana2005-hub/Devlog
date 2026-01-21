@@ -1,13 +1,12 @@
-DevLog is a modern, user-friendly blogging platform designed to help developers document, share, and track their coding journey. Whether you’re building personal projects, contributing to open-source, or experimenting with new technologies, DevLog provides a clean and organized space to record your progress, maintain project notes, and showcase your work.
+Devlog is a developer-centric blogging platform created to document technical learnings, project updates, and development workflows. The application was built using React.js for the frontend and Node.js for backend logic, following a modular and component-based architecture.
 
-Key Features:
-Project Tracking: Keep a detailed record of your development tasks and milestones.
-Code Snippets & Notes: Save and categorize snippets, solutions, and ideas for quick reference.
-Responsive Design: Accessible seamlessly on both desktop and mobile devices.
-Open-Source: Fully open-source, welcoming contributions from developers worldwide.
-DevLog is perfect for developers who want to improve productivity, maintain structured documentation, and share their journey with the community.
+Under this project I have:
+1)Building user interfaces using React.js and component-based design
+2)Designed and developed a developer-focused blogging platform using HTML, CSS, JavaScript, and Node.js
+3)Implemented a responsive and minimal UI to improve content readability across devices
+4)Applied frontend–backend separation principles in a real-world project
+5)Used Git and GitHub for version control and project management
+6)Identified and resolved deployment issues related to static hosting environments
+7)Strengthened debugging, problem-solving, and code organization skills
 
-Technologies Used:
-Frontend: HTML/ CSS / JS
-Backend: Node.js
-Database: MySQL
+Tech Stack: React.js, JavaScript, HTML, CSS, Node.js, Git, GitHub
